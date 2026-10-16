@@ -25,18 +25,27 @@ You can also choose **Terminal → Run Task… → Preview portfolio** in VS Cod
 | `assets/Balajikumar_resume.pdf` | Replace with an updated resume using the same filename |
 | `assets/balaji-kumar.jpeg` | Your profile photo in the opening section |
 | `assets/template-store.jpg` | Screenshot of the Mini SaaS Template Store application |
+| `assets/talvyniq.png` | Screenshot of the deployed Talvyniq application |
+| `assets/Udemy-Web-Development-Certificate.pdf` | Downloadable Udemy course certificate |
 | `assets/favicon.svg` | Browser tab icon |
 
 When changing your email, update both its links in `index.html` and `emailAddress` in `script.js`. The footer year updates automatically.
 
 ## Project visuals and links
 
-The portfolio features one project: **Mini SaaS Template Store**. Its image is an actual application screenshot from the project documentation. The template previews within that application are sample design concepts.
+The portfolio features two deployed projects, with separate live-demo, source, and detail links:
+
+| Project | Live application | Source repository |
+| --- | --- | --- |
+| Talvyniq — Job Portal & Resume Analyzer | https://talvyniq.vercel.app/ | https://github.com/balajikumar-dev/talvyniq |
+| Mini SaaS Template Store | https://mini-saas-template-store.vercel.app/ | https://github.com/balajikumar-dev/fullstack-intern-task |
+
+Both frontend addresses returned HTTP 200 with the expected application titles on 16 October 2026. Talvyniq's health endpoint also reported MongoDB and Cloudinary enabled. Talvyniq's repository is private, so visitors require repository access to view its source.
+
+Talvyniq's description covers job discovery, role-based application management, private resume uploads, local keyword analysis, and explicit skill-overlap recommendations. It does not claim live AI analysis. Mini SaaS details follow its public source README; the templates inside the application are sample design concepts.
+
+The resume PDF was replaced from the user's updated resume document. The continued-learning section links the supplied Udemy course certificate. The original downloadable asset filename is retained so existing resume links continue to work.
 
 GitHub profile: https://github.com/balajikumar-dev
-
-Project source: https://github.com/balajikumar-dev/fullstack-intern-task
-
-Project features are based on the source README. A live demo link is omitted while the application's backend deployment is incomplete.
 
 Contact buttons open email, phone, GitHub, or LinkedIn applications/pages. There is no contact form backend. The site supports GitHub Pages: publish the main branch from the repository root.

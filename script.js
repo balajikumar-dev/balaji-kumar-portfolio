@@ -1,5 +1,20 @@
 /* Featured project details verified against the project source and README. */
 const projects = {
+  'talvyniq': {
+    title: 'Talvyniq — Job Portal & Resume Analyzer',
+    category: 'FULL-STACK DEVELOPMENT / OCTOBER 2026',
+    summary: 'A deployed MERN application connecting job discovery, resume feedback, and application management through candidate, recruiter, and admin workspaces.',
+    features: [
+      'Search and filter jobs, save opportunities, and track applications.',
+      'Upload text-based PDF resumes, review local keyword analysis, and explore explicit skill-overlap recommendations.',
+      'Recruiter job management, candidate shortlisting, interview scheduling, and calendar downloads.',
+      'Role-based access and private resume downloads, with MongoDB persistence and Cloudinary storage.',
+      'React frontend on Vercel and Express API on Render, with automated workflow and service tests.'
+    ],
+    technologies: ['React', 'Vite', 'Node.js', 'Express', 'MongoDB', 'Mongoose', 'Cloudinary', 'Socket.IO'],
+    sourceUrl: 'https://github.com/balajikumar-dev/talvyniq',
+    liveUrl: 'https://talvyniq.vercel.app/'
+  },
   'template-store': {
     title: 'Mini SaaS Template Store',
     category: 'FULL-STACK DEVELOPMENT / OCTOBER 2026',
@@ -11,7 +26,9 @@ const projects = {
       'Responsive React interfaces with loading, error, and empty states.',
       'Express REST APIs, backend integration tests, and GitHub Actions checks.'
     ],
-    technologies: ['React', 'Vite', 'Tailwind CSS', 'Node.js', 'Express', 'MongoDB', 'Mongoose', 'JWT']
+    technologies: ['React', 'Vite', 'Tailwind CSS', 'Node.js', 'Express', 'MongoDB', 'Mongoose', 'JWT'],
+    sourceUrl: 'https://github.com/balajikumar-dev/fullstack-intern-task',
+    liveUrl: 'https://mini-saas-template-store.vercel.app/'
   }
 };
 
@@ -59,6 +76,8 @@ document.querySelectorAll('[data-project]').forEach(button => {
     });
     document.querySelector('#dialog-features').replaceChildren(...features);
     document.querySelector('#dialog-tags').replaceChildren(...technologies);
+    dialog.querySelector('.dialog-github').href = project.sourceUrl;
+    dialog.querySelector('.dialog-live').href = project.liveUrl;
     dialogTrigger = button;
     dialog.showModal();
     document.body.classList.add('dialog-open');
